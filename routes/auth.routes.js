@@ -25,7 +25,21 @@ router.get("/signup", (req, res) => {
     }
   });
   
+  // GET /auth/login
+
+  router.get("/login", (req, res) => {
+    res.render("auth/login");
+  });
   
+
+
+
+
+
+
+
+
+
   module.exports = router;
 
   
