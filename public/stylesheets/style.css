@@ -13,3 +13,13 @@ a {
 h4{
   text-align: center;
 }
+.signUp{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+#logotype{
+  width: 4vh;
+  height: auto;
+  margin-right: 2vh;
+}

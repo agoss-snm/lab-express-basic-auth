@@ -11,9 +11,15 @@
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" name="password" class="form-control" id="exampleInputPassword1" required>
+      <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+  {{#if errorMessage}}
+    <p class="error">{{errorMessage}}</p>
+  {{/if}}
+  {{#if Message}}
+    <p class="menssage">{{Message}}</p>
+  {{/if}}
 </div>
