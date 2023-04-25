@@ -39,13 +39,18 @@ h4{
   margin-top: 3vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-around
+  justify-content: space-around;
+  
 }
 
 ul>li{
   color: white;
   padding: 2vh;
   list-style: none;
+}
+
+.containerBody{
+  min-height: 100vh;
 }
 
 @media  (max-width : 600px) {
@@ -56,7 +61,8 @@ ul>li{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center
+  align-items: center;
 }
 
 }
+
