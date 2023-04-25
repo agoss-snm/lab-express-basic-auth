@@ -1,13 +1,17 @@
 {{!-- views/users/user-profile.hbs --}}
 
 {{#if userInSession}}
-  <h2>Welcome, {{ userInSession.email }}!</h2>
-  <p>This is your profile page my friend!</p>
-  <button>
-    <a href="/user-profile">Reload the page</a>
-  </button>
+
+<div class="container">
+    <h4 class="blue">Welcome to your dashboard, {{ userInSession.email }}!</h4>
+
+    <div class="container dashboard">
+        <p class="align">This is your profile page my friend!</p>
+    </div>
+</div>
 {{else}}
-  
-  <br><p>Your session is not active. Please loggin.</p>
- 
+
+<br>
+<p>Your session is not active. Please loggin.</p>
+
 {{/if}}

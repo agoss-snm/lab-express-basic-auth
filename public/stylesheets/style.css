@@ -35,16 +35,14 @@ h4{
 }
 
 .footerLayout{
-  background-color: rgb(41, 41, 41);
-  margin-top: 3vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+  min-height: 20vh;
 }
 
 ul>li{
-  color: white;
+  color: rgb(129, 129, 129);
   padding: 2vh;
   list-style: none;
 }
@@ -52,11 +50,51 @@ ul>li{
 .containerBody{
   min-height: 100vh;
 }
+.blue{
+  color: #00B7FF;
+}
+.imagine{
+  color: #00B7FF;
+  padding: 5vh;
+}
+.alignLi{
+  margin-left: 3vh;
+}
+.card{
+  border: none !important;
+}
+.col{
+  padding: 3vh;
+}
+.green{
+  color: rgb(24, 164, 48);
+}
+
+.orange{
+  color: orangered;
+}
+
+/**butttonProfile*/
+
+#profileLink{
+  color: #00B7FF; 
+}
+/**button logout*/
+button {
+    border-radius: 5px !important;
+    padding: 0.5vh;
+}
+
+/*dashboard*/
+.dashboard{
+  text-align: center;
+}
+
+/*Media*/
 
 @media  (max-width : 600px) {
- 
 .footerLayout{
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(255, 255, 255);
   margin-top: 3vh;
   display: flex;
   flex-direction: column;
