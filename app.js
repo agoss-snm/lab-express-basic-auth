@@ -25,7 +25,6 @@ app.use(function(req, res, next) {
     next();
   });
 
-
 require('./error-handling')(app);
 
 module.exports = app;

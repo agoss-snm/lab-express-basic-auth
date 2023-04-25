@@ -8,6 +8,7 @@ const User = require("../models/User.model");
 
 
 
+
 router.get("/signup", (req, res) => {
     res.render("auth/signup");
   });
@@ -50,10 +51,6 @@ router.get("/signup", (req, res) => {
     res.render("auth/login");
   });
 
-  router.get('/user-profile', (req, res) => {
-    res.render('users/user-profile', { userInSession: req.session.currentUser });
-  });
-  
 
 // POST login route ==> to process form data
 router.post('/login', async(req, res, next) => {
@@ -84,6 +81,10 @@ router.post('/login', async(req, res, next) => {
     .catch(error => next(error));
 });
 
+//profile User
+router.get('/user-profile', (req, res) => {
+  res.render('users/user-profile', { userInSession: req.session.currentUser });
+});
 // Router Post Logout
 
 router.post('/logout', (req, res, next) => {
